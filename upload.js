@@ -7,12 +7,12 @@ const chalk = require('chalk');
 const spinner = ora(chalk.green('正在发布到服务器...'));
 spinner.start();
 
-client.scp('./dist/', {    // 本地打包文件的位置
+client.scp('.', {    // 本地打包文件的位置
     "host": '192.168.110.128', // 服务器的IP地址
     "port": '22',            // 服务器端口， 一般为 22
     "username": 'root',       // 用户名
     "password": 'root',     // 密码
-    "path": '/opt/vue'            // 项目部署的服务器目标位置
+    "path": '/var/jenkins_home/workspace/vue'            // 项目部署的服务器目标位置
 }, err => {
     spinner.stop();
     if (!err) {
