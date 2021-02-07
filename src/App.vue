@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <h2>陈振华大傻逼</h2>
+  <h2>陈振华大傻逼!!!!!!!</h2>
   <HelloWorld msg="Hello Vue 3.0 + Vite" />
 </template>
 
